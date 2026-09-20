@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Лабораторна робота №1</h1>
+    <h2>Робота з формами</h2>
+    <h2>Виконав: студент групи АнД-31 Стефанюк Владислав</h2>
+    <h3>Варіант №21</h3>
+    <a href="index.html">На головну</a>
+    <hr>
+
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для введення інформації про фільм до БД фільмів (Варіант 5)[cite: 1]:</p>
+    <ul>
+        <li>дані про фільм: назва фільму, жанр (вибирається зі списку), дата виходу на екрани, опис фільму, картинка з афішою[cite: 1];</li>
+        <li>дані про режисера: ПІБ, дата народження, біографія, посилання на веб-сайт[cite: 1].</li>
+    </ul>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Дані про фільм</legend>
+            <label>Назва фільму:
+                <input type="text" name="movie_title">
+            </label>
+            <br><br>
+            <label>Жанр:
+                <select name="genre">
+                    <option>Наукова фантастика</option>
+                    <option>Драма</option>
+                    <option>Комедія</option>
+                    <option>Бойовик</option>
+                    <option>Трилер</option>
+                    <option>Документальний</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Дата виходу на екрани:
+                <input type="date" name="release_date">
+            </label>
+            <br><br>
+            <label>Опис фільму:<br>
+                <textarea name="movie_desc" rows="4" cols="50"></textarea>
+            </label>
+            <br><br>
+            <label>Афіша фільму:
+                <input type="file" name="poster">
+            </label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Дані про режисера</legend>
+            <label>ПІБ:
+                <input type="text" name="director_name">
+            </label>
+            <br><br>
+            <label>Дата народження:
+                <input type="date" name="director_birth">
+            </label>
+            <br><br>
+            <label>Біографія:<br>
+                <textarea name="director_bio" rows="4" cols="50"></textarea>
+            </label>
+            <br><br>
+            <label>Посилання на веб-сайт:
+                <input type="url" name="director_site">
+            </label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Відправити</button>
+        <button type="reset">Очистити</button>
+    </form>
+</body>
+</html>
